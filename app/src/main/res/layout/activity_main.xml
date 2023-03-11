@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:scrollbars = "vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".view.MainActivity">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monopoly Cards"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Função de transferência -->
+        <TextView
+            android:id="@+id/transfer_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/payer_id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Payer ID"
+            android:inputType="number"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/receiver_id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Receiver ID"
+            android:inputType="number"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/transfer_value_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transfer Value"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/transfer_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transfer"
+            android:layout_marginTop="16dp" />
+
+        <!-- Função de receber/pagar -->
+        <TextView
+            android:id="@+id/receive_pay_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive / Pay"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/card_id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card ID"
+            android:inputType="number"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/value_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Value"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/receive_pay_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/receive_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive" />
+
+            <RadioButton
+                android:id="@+id/pay_radiobutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/receive_pay_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receive / Pay"
+            android:layout_marginTop="16dp" />
+
+        <!-- Função de fim da rodada -->
+        <TextView
+            android:id="@+id/round_completed_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round Completed"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="32dp" />
+
+        <EditText
+            android:id="@+id/rewarded_id_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card ID"
+            android:inputType="number"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/reward_value_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reward Value"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/reward_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reward"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
